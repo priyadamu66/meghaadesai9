@@ -1,0 +1,64 @@
+/* HERO SECTION */
+#hero {
+  background: linear-gradient(120deg, #2563eb, #1e40af);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* FEATURES SECTION */
+#features {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#features h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* GRID CONTAINER */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto; /* center the grid */
+}
+
+/* INDIVIDUAL CARDS */
+.card {
+  background: none;   /* no box background */
+  padding: 20px;
+  text-align: center;
+}
+
+/* HEADINGS */
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* GENERAL STYLING */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
