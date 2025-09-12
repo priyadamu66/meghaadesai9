@@ -1,6 +1,6 @@
 /* HERO SECTION */
 #hero {
-  background: linear-gradient(120deg, #2563eb, #1e40af);
+  background: linear-gradient(to right, #2563eb, #60a5fa);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -71,6 +71,97 @@ body {
   font-family: Arial, sans-serif;
   background: #fafafa;
 }
+
+.bio-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centers vertically on the page */
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.bio-section {
+    display: flex;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Ensures rounded corners apply to children */
+    padding: 30px; /* Adjust internal padding if needed, initially let content manage it */
+    gap: 40px; /* Space between text and image */
+}
+
+.text-content {
+    flex: 2; /* Takes more space for text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-content {
+    flex: 1; /* Takes less space for image */
+    display: flex;
+    /*align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0; /* Background for the image area, can be adjusted */
+    border-radius: 10px; /* Slight border-radius for the image container */
+    overflow: hidden;
+    position: relative; /* For the subtle shadow effect */
+}
+
+.image-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(0,0,0,0.05) 100%); /* Subtle bottom shadow */
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.image-content img {
+    width: 100%; /* Make image fill its container */
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Image itself has rounded corners */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .bio-section {
+        flex-direction: column; /* Stack columns on smaller screens */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .text-content {
+        padding: 0; /* Remove extra padding on small screens */
+    }
+
+    .image-content {
+        order: -1; /* Move image above text on small screens */
+        min-height: 300px; /* Ensure image container has some height */
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .bio-section {
+        margin: 20px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
 
 /* MOBILE RESPONSIVE STYLING */
 @media (max-width: 900px) {
