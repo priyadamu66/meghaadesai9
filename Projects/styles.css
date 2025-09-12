@@ -4,10 +4,11 @@
   color: white;
   text-align: center;
   padding: 60px 20px;
+  font-family: 'Playfair Display';
 }
 
 .btn {
-  background: #2563eb;
+  background: #1e3a8a;
   color: white;
   padding: 12px 20px;
   border-radius: 6px;
@@ -94,6 +95,7 @@ body {
 
 .text-content {
     flex: 2; /* Takes more space for text */
+    font-family: 'Playfair Display';
     padding: 20px;
     display: flex;
     flex-direction: column;
